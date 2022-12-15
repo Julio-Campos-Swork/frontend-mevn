@@ -75,6 +75,7 @@ resp == true ? getLinks() : console.log("no se actualizo")
                       v-for="link in useAxios.links.data.links"
                     >
                       <v-text-field
+                       bg-color="white"
                         append-icon="mdi-delete"
                         variant="solo"
                         :label="`Link Acortado - ${link.nanoLink}`"
@@ -91,6 +92,8 @@ resp == true ? getLinks() : console.log("no se actualizo")
             </v-window-item>
             <v-window-item value="addLink">
               <v-card flat>
+              <h1>Codificar Link</h1>
+
                 <v-row>
                   <v-col cols="12" align-self="auto">
                     <v-text-field
@@ -150,6 +153,7 @@ resp == true ? getLinks() : console.log("no se actualizo")
         </v-container>
       </v-container>
     </v-row>
+
   </v-container>
 </template>
 
